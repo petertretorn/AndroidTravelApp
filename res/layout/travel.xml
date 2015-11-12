@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TravelActivity" >
+
+    <TextView
+        android:id="@+id/checkinlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter check-in station" />
+
+    <Button
+        android:id="@+id/checkinselect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkinlabel"
+        android:text="Select" />
+
+    <EditText
+        android:id="@+id/checkintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkinselect"
+        android:layout_toLeftOf="@id/checkinselect"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/checkoutlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkintxt"
+        android:layout_centerHorizontal="true"
+        android:text="Enter check-out station" />
+
+    <Button
+        android:id="@+id/checkoutselect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkoutlabel"
+        android:enabled="false"
+        android:text="Select" />
+
+    <EditText
+        android:id="@+id/checkouttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkoutselect"
+        android:layout_toLeftOf="@id/checkoutselect"
+        android:enabled="false"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/checkinbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkouttxt"
+        android:text="Check in" />
+
+    <Button
+        android:id="@+id/pricebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkouttxt"
+        android:layout_centerHorizontal="true"
+        android:text="$" />
+
+    <Button
+        android:id="@+id/checkoutbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkouttxt"
+        android:enabled="false"
+        android:text="Check out" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkoutbutton"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/number_array" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/receiptbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:text="Receipt" />
+
+    <ImageView
+        android:id="@+id/travelappimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/train" />
+
+</RelativeLayout>

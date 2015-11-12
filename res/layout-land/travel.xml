@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/checkinlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter check-in station" />
+
+    <Button
+        android:id="@+id/checkinbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkinlabel"
+        android:text="Check in" />
+
+    <Button
+        android:id="@+id/checkinselect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkinlabel"
+        android:layout_toLeftOf="@id/checkinbutton"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/checkinhere"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkinlabel"
+        android:layout_toLeftOf="@id/checkinselect"
+        android:text="Here" />
+
+    <EditText
+        android:id="@+id/checkintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkinselect"
+        android:layout_below="@id/checkinlabel"
+        android:layout_toLeftOf="@id/checkinhere"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/checkoutlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkintxt"
+        android:layout_centerHorizontal="true"
+        android:text="Enter check-out station" />
+
+    <Button
+        android:id="@+id/checkoutbutton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkoutlabel"
+        android:enabled="false"
+        android:text="Check out" />
+
+    <Button
+        android:id="@+id/checkoutselect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkoutlabel"
+        android:layout_toLeftOf="@id/checkoutbutton"
+        android:enabled="false"
+        android:text="Select" />
+
+    <Button
+        android:id="@+id/checkouthere"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkoutlabel"
+        android:layout_toLeftOf="@id/checkoutselect"
+        android:enabled="false"
+        android:text="Here" />
+
+    <EditText
+        android:id="@+id/checkouttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/checkoutbutton"
+        android:layout_below="@id/checkoutlabel"
+        android:layout_toLeftOf="@id/checkouthere"
+        android:enabled="false"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/checkoutbutton"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passengers" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/number_array" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/receiptbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/checkoutselect"
+        android:text="Receipt" />
+
+</RelativeLayout>

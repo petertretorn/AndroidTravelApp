@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Travel App</string>
+    <string name="title_activity_travel">The Travel App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_select_station">Select station</string>
+    <string name="title_activity_web">Web</string>
+    <string name="title_activity_history">History</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_invite">Invite Friends</string>
+    <string name="passenger_prompt">Passengers</string>
+
+    <string-array name="number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="title_activity_sights">SightsActivity</string>
+
+</resources>

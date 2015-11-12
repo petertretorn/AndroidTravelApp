@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SightsActivity" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sights in " />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a new sight" />
+
+    <EditText
+        android:id="@+id/sightname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a new sight"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/sightdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sight description"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/sightuploader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/addsight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add sight" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="History settings" >
+        <ListPreference
+            android:defaultValue="10"
+            android:entries="@array/historylength"
+            android:entryValues="@array/historylength"
+            android:key="historylength"
+            android:summary="The amount of history to show"
+            android:title="History length" >
+        </ListPreference>
+
+        <Preference
+            android:key="clearhistory"
+            android:summary="If you want your privacy back"
+            android:title="Clear history" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Station settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="savestations"
+            android:summary="Let the app save visited stations for your convenience"
+            android:title="Save stations" />
+
+        <Preference
+            android:key="clearstations"
+            android:summary="Remove all user-inputted stations"
+            android:title="Clear stations" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
